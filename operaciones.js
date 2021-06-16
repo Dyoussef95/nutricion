@@ -45,7 +45,6 @@ function calcularGCTparcial(){
     METS=document.getElementById('METS-GCT').value;
     METS=comprobar(METS);
     GCT=TMB+FAC+METS;
-    window.alert();
     document.getElementById('GCTparcial1').value=GCT;
     GCTse=TMB+FAC;
     document.getElementById('GCTseparcial1').value=GCTse;
