@@ -22,29 +22,22 @@
                 <div class="col-1">
                     <h5>TMB</h5>
                 </div>
-                <div class="col-1">
-                    <p>= (10 *</p>
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Peso[kg]" name="peso" id="peso" onchange="calcularTMB();">
-                </div>
-                <div class="col">
-                    <p>) + (6,25 *</p>
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Altura[cm]" name="altura" id="altura" onchange="calcularTMB();">
-                </div>
-                <div class="col">
-                    <p>) - (5 *</p>
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Edad[años]" name="edad" id="edad" onchange="calcularTMB();">
-                </div>
-                <div class="col">
-                    <p>) + 5 =</p>
-                </div>
-                <div class="col-2">
-                    <input type="text" class="form-control" name="TMB" id="TMB" disabled>
+                <div class="col-auto">
+                    = (10 *
+                
+                    <input type="text" placeholder="Peso[kg]" name="peso" id="peso" onchange="calcularTMB();">
+                
+                    ) + (6,25 *
+                
+                    <input type="text" placeholder="Altura[cm]" name="altura" id="altura" onchange="calcularTMB();">
+                
+                    ) - (5 *
+                
+                    <input type="text" placeholder="Edad[años]" name="edad" id="edad" onchange="calcularTMB();">
+                
+                    ) + 5 =
+                
+                    <input type="text" name="TMB" id="TMB" disabled>
                 </div>
             </div>
             <br>
@@ -52,23 +45,17 @@
                 <div class="col-1">
                     <h5>FAC</h5>
                 </div>
-                <div class="col-1">
-                    <p>=</p>
-                </div>
-                <div class="col-2">
-                    <input type="text" class="form-control" placeholder="FAC" name="fac">
-                </div>
-                <div class="col">
-                    <p>*</p>
-                </div>
-                <div class="col-2">
-                    <input type="text" class="form-control" name="TMB-FAC" id="TMB-FAC" disabled>
-                </div>
-                <div class="col">
-                    <p>=</p>
-                </div>
-                <div class="col-2">
-                    <input type="text" class="form-control" disabled name="FAC">
+                <div class="col-auto">
+                    =
+                    <input type="text" placeholder="FAC" name="fac" id="fac" onchange="calcularFAC();">
+            
+                    *
+                
+                    <input type="text" name="TMB-FAC" id="TMB-FAC" disabled placeholder="TMB">
+                
+                    =
+               
+                    <input type="text" disabled name="FAC" id="FAC">
                 </div>
             </div>
             <br>
@@ -76,29 +63,22 @@
                 <div class="col-1">
                     <h5>METS</h5>
                 </div>
-                <div class="col-1">
-                    <p>=</p>
-                </div>
-                <div class="col-2">
-                    <input type="text" class="form-control" placeholder="rango" name="rangoMets">
-                </div>
-                <div class="col">
-                    <p>* 0,0175 *</p>
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="peso" name="pesoMets">
-                </div>
-                <div class="col">
-                    <p>*</p>
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="min" name="minMets">
-                </div>
-                <div class="col">
-                    <p>=</p>
-                </div>
-                <div class="col-2">
-                    <input type="text" class="form-control" disabled name="METS">
+                <div class="col-auto">
+                    =
+               
+                    <input type="text" placeholder="rango" name="rangoMets" id="rangoMets" onchange="calcularMETS();">
+                
+                    * 0,0175 *
+                
+                    <input type="text" placeholder="peso" name="pesoMets" id="pesoMets" onchange="calcularMETS();">
+                
+                    *
+               
+                    <input type="text" placeholder="min" name="minMets" id="minMets" onchange="calcularMETS();">
+                
+                    =
+                
+                    <input type="text" disabled name="METS" id="METS">
                 </div>
             </div>
             <br>
@@ -106,87 +86,57 @@
                 <div class="col-1">
                     <h5>GCT</h5>
                 </div>
-                <div class="col-1">
-                    <p>=</p>
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="TMB" name="TMB-GCT" id="TMB-GCT" disabled>
-                </div>
-                <div class="col">
-                    <p>+</p>
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="FAC" name="FAC-GCT" disabled>
-                </div>
-                <div class="col">
-                    <p>+</p>
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="METS" name="METS-GCT" disabled>
-                </div>
-                <div class="col">
-                    <p>=</p>
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" disabled name="GCTparcial">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <input type="text" class="form-control" disabled name="GCTparcial">
-                </div>
-                <div class="col">
-                    <p>+</p>
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Super/Def" name="variacion">
-                </div>
-                <div class="col">
-                    <p>=</p>
-                </div>
-                <div class="col-2">
-                    <input type="text" class="form-control" disabled name="GCT">
+                <div class="col-auto">
+                    =
+                
+                    <input type="text" placeholder="TMB" name="TMB-GCT" id="TMB-GCT" disabled>
+           
+                    +
+                
+                    <input type="text" placeholder="FAC" name="FAC-GCT" id="FAC-GCT" disabled>
+                
+                    +
+               
+                    <input type="text" placeholder="METS" name="METS-GCT" id="METS-GCT" disabled>
+                
+                    =
+                
+                    <input type="text" disabled name="GCTparcial" id="GCTparcial1">
+               
+                    +
+            
+                    <input type="text" placeholder="Super/Def" name="variacion" id="variacion" onchange="calcularGCT();">
+           
+                    =
+               
+                    <input type="text" disabled name="GCT" id="GCT">
                 </div>
             </div>
             <br>
             <div class="row">
-                <div class="col-1">
+                <div class="col-auto">
                     <h5>GCT(sin entrenar)</h5>
                 </div>
-                <div class="col-1">
-                    <p>=</p>
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="TMB" name="TMB-GCTse" id="TMB-GCTse" disabled>
-                </div>
-                <div class="col">
-                    <p>+</p>
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="FAC" name="FAC-GCTse" disabled>
-                </div>
-                <div class="col">
-                    <p>=</p>
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" disabled name="GCTseparcial">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <input type="text" class="form-control" disabled name="GCTseparcial">
-                </div>
-                <div class="col">
-                    <p>+</p>
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Super/Def" name="variacionse">
-                </div>
-                <div class="col">
-                    <p>=</p>
-                </div>
-                <div class="col-2">
-                    <input type="text" class="form-control" disabled name="GCTse">
+                <div class="col-auto">
+                    =
+                
+                    <input type="text" placeholder="TMB" name="TMB-GCTse" id="TMB-GCTse" disabled>
+               
+                    +
+              
+                    <input type="text" placeholder="FAC" name="FAC-GCTse" disabled id="FAC-GCTse">
+                
+                    =
+                
+                    <input type="text" disabled name="GCTseparcial" id="GCTseparcial1">
+                
+                    +
+                
+                    <input type="text"  placeholder="Super/Def" name="variacionse" id="variacionse" onchange="calcularGCTse();">
+                
+                    =
+               
+                    <input type="text" disabled name="GCTse" id="GCTse">
                 </div>
             </div>
         </form>
