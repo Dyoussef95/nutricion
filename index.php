@@ -138,6 +138,7 @@
                
                     <input type="text" disabled name="GCTse" id="GCTse">
                 </div>
+                <br>
             </div>
         </form>
     </div>
